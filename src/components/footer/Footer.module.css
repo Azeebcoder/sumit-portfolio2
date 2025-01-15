@@ -1,0 +1,101 @@
+.footerBackground{
+  background-color: var(--footer-background);
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 6rem;
+}
+.footerItems{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.footerRow{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  /* color: var(--footer-text); */
+}
+.footerRow h2{
+  color: var(--footer-text);
+}
+.footerDescription{
+  color: var(--footer-text);
+}
+.quickLinks{
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  align-items: start;
+  font-weight: 600;
+}
+.quickLinks li:hover a{
+  color: rgb(199, 111, 10);
+  transform: scale(1.05);
+}
+.quickLinks li a{
+  display: flex;
+  color: var(--footer-text);
+  gap: .5rem;
+  align-items: center;
+  transition: .3s;
+}
+.contactDetails{
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactDetails li a{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: .3rem;
+  color: var(--footer-text);
+  transition: .3s;
+}
+.contactDetails li a:hover{
+  color: rgb(199, 111, 10);
+  transform: scale(1.05);
+}
+.contactLinks{
+  display: flex;
+  gap: .4rem;
+}
+.contactLinks li a{
+  padding: .7rem;
+  color:var(--text-light);
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 18px;
+}
+.contactLinks li a:hover{
+  background-color: var(--text-light);
+  color: var(--skill-box-hover);
+  transform: scale(1.1);
+}
+.credits{
+  color: var(--footer-text);
+  text-align: center;
+}
+
+@media (max-width: 850px){
+  .footer{
+    padding: 1rem 0;
+  }
+  .footerItems{
+    flex-direction: column;
+  }
+  .footerRow{
+    width: 90%;
+  }
+}

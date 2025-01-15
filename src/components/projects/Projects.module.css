@@ -1,0 +1,156 @@
+.projectSection{
+  background-color: var(--odd-background);
+  padding: 2rem 0;
+}
+.project{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  margin: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+.hero {
+  display: flex;
+  gap: 2rem;
+  height: 18rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  transition: .3s;
+}
+.hero:hover .text{
+  transform: skew(69deg, -28deg);
+
+}
+.hero p{
+  color: var(--text-light);
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  background-image: linear-gradient(0deg, #3f5efb, #fc466b);
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+  transition: .3s;
+}
+
+.second .text {
+  background-image: linear-gradient(-20deg, #bb7413, #e7d25c)
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30%;
+  left: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+  height: 100%;
+}
+
+.mainText {
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  left: 150px;
+  bottom: 30%;
+}
+
+.heroBtn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.heroBtn:hover {
+  background-color: rgba(212, 197, 197, 0.3);
+}
+
+.heroBtn a {
+  color: #fff !important;
+}
+
+.projectName {
+  position: absolute;
+  left: 30px;
+  bottom: 10%;
+  font-weight: 600;
+}
+.projectName p{
+  color:white;
+  letter-spacing: 2px;
+
+}
+.btn i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+}
+.catogeries{
+  max-width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 1.5rem;
+}
+.catogeries button{
+  padding: .6rem 1rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: .3s;
+  font-weight: 600;
+}
+.catogeries button:hover{
+  box-shadow: 7px 7px 2px 3px black;
+}
+.activeCatogrie{
+  background-color: black !important;
+  color: white;
+}
+@media (max-width: 850px){
+  .projects{
+    grid-template-columns: 1fr;
+    margin: 3rem 1rem;
+  }
+  .catogeries{
+    max-width: 90%;
+  }
+}

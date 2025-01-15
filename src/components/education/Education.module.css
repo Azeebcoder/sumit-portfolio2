@@ -1,0 +1,70 @@
+.educationSection{
+  background-color: var(--even-background);
+  padding: 2rem 0;
+}
+
+.headingText{
+  text-align: center;
+  margin-top: .7rem;
+}
+.educations{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.educationBox{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 13px 7px 27px -8px black;
+  border: 1px solid var(--text-dark);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--odd-background);
+}
+.educationImage{
+  width: 30%;
+  height: 10rem;
+  display: flex;
+}
+.educationImage img{
+  width: 100%;
+}
+.educationData{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: .7rem;
+}
+.educationData h2,h3{
+  color: var(--light-gray-text);
+}
+@media (max-width: 850px){
+  .educationBox{
+    width: 90%;
+    gap: 0;
+    flex-direction: column;
+    align-items: start;
+  }
+  .educationImage{
+    width: 100%;
+    height: auto;
+  }
+  .educationData{
+    font-size: 14px;
+  }
+  .educationData h2{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .educationData h3{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .educationData p{
+    font-size: 14px;
+  }
+}

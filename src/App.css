@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+  /* border: 1px solid black;  */
+}
+
+:root {
+  --btn-color : #007bff;
+  --btn-hover : #005dc0;
+  --text-light:white;
+  --text-dark : black;
+  --odd-background : #E9ECEF;
+  --even-background :#F8F9FA ;
+  --light-gray-text : #343A40;
+
+  --nav-text : #212529;
+
+  --hero-text1 : #495057;
+  --hero-text2 : #5e6770;
+  --hero-special : #17A2B8;
+
+
+  --skills-box : #4800bb;
+  --skill-box :  #1a0738;
+  --skill-box-hover : #2f1750;
+
+  --footer-background : #212529;
+  --footer-text :rgb(216, 216, 216) ;
+
+  --heading-text : black;
+  --description-text : rgb(87, 87, 87);
+  --contact-background : rgb(241, 246, 247);
+}
+
+.darkTheme {
+  --btn-color: #0d6efd; /* Rich blue for buttons */
+  --btn-hover: #0a58ca; /* Slightly darker for hover effect */
+
+  --text-light: #f8f9fa; /* Off-white for better readability */
+  --text-dark: #a8aaad; /* Light gray for secondary text */
+
+  --odd-background: #343a40; /* Medium dark gray for odd backgrounds */
+  --even-background: #3c4248; /* Slightly darker gray for even backgrounds */
+
+  --light-gray-text: #adb5bd; /* Cool gray for lighter text */
+
+  --nav-text: #dee2e6; /* Light gray for navigation text */
+
+  --hero-text1: #e9ecef; /* Soft gray for main hero text */
+  --hero-text2: #ced4da; /* Muted gray for secondary hero text */
+  --hero-special: #20c997; /* Bright teal for special text emphasis */
+
+  --skills-box: #6f42c1; /* Deep lavender for skills boxes */
+  --skill-box: #2f1750; /* Dark violet for skill box backgrounds */
+  --skill-box-hover : #1a0738;
+
+  --footer-background: #1f2327; /* Deep charcoal for footer background */
+  --footer-text: #c2c8cf; /* Light gray for footer text */
+
+  --heading-text: #f1f3f5; /* Bright off-white for headings */
+  --description-text: #9da3a8; /* Muted gray for descriptions */
+
+  --contact-background : #c4c8df;;
+}
+
+a{
+  color: var(--nav-text);
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+span{
+  color: var(--hero-special);
+}
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+  color: var(--heading-text);
+}
+h2{
+  color: var(--heading-text);
+}
+h3{
+  color: var(--heading-text);
+}
+h4{
+  color: var(--heading-text);
+}
+p{
+  color: var(--description-text);
+}
+@media (max-width: 850px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  h3{
+    font-size: 22px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+}

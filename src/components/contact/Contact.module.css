@@ -1,0 +1,122 @@
+.contactSection{
+  background-color: var(--even-background);
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactDetail{
+  min-width: 80%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2.4rem 5rem;
+  padding:  4rem;
+  background-color:var(--contact-background);
+  border-radius: 10px;
+  box-shadow: 10px 12px 16px -10px black;
+}
+.contactImage{
+  width: 50%;
+  display: flex;
+}
+.inputForm{
+  padding: 1rem;
+  width: 50%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: end;
+}
+.input{
+  width: 100%;
+  padding: 1rem;
+  padding-left: 3.75rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(240, 240, 240, 0.829);
+}
+.massege{
+  resize: vertical;
+}
+.submitBtn{
+  margin-right: 10px;
+  background-color: var(--btn-color);
+  border: none;
+  padding: 1rem 3rem;
+  color: var(--text-light);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 8px 8px 20px -5px rgb(12, 74, 190);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  transition: .3s;
+  cursor: pointer;
+}
+.submitBtn:hover{
+  background-color: var(--btn-hover);
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: 30%;
+  left: 25px;
+  color: #888; /* Icon color */
+  font-size: 1.2rem;
+}
+
+.massege {
+  padding-left: 60px;
+}
+.massegeIcon{
+  top: 1rem;
+}
+@media (max-width: 850px){
+  .contactDetail{
+    flex-direction: column;
+    margin: 2.4rem 0;
+    width: 90%;
+    padding: 4rem 1rem;
+  }
+  .contactImage{
+    display: none;
+  }
+  .inputForm{
+    width: 100%;
+  }
+  .submitBtn{
+    padding: .8rem 1.5rem;
+    gap: .4rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.successToast{
+  background-color: #ffffff !important; /* Solid green for success */
+  color: #000000 !important;              /* White text */
+  border-radius: 8px !important;       /* Rounded corners */
+  padding: 12px 16px !important;       /* Padding for spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important; /* Shadow */
+  border: none !important;            
+}
+
+.successProgress{
+  background: #24d44d !important;         /* White progress bar */
+  height: 5px !important;              /* Progress bar height */
+  border-radius: 8px;
+}
