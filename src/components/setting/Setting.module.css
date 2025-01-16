@@ -1,0 +1,116 @@
+.setting{
+  position: absolute;
+  display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 20rem;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: .3s;
+    padding: 1rem;
+    background-color: var(--even-background);
+    z-index: 10;
+}
+.active{
+  transform: translateX(0);
+}
+.settingList{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.closeIcon{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: end;
+}
+.closeIcon button{
+  background: none;
+  border: none;
+  color: var(--heading-text);
+  font-size: 35px;
+  cursor: pointer;
+  display: flex;
+}
+
+.toggler{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: .2rem;
+}
+.themeIcons{
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--hero-text1);
+}
+
+.themeToggler {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hidden Checkbox */
+.themeToggler input[type="checkbox"] {
+  display: none;
+}
+
+/* Toggler Background */
+.toggleLabel {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* Default background for light theme */
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Toggler Circle */
+.toggleCircle {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Checked State (Dark Theme) */
+.themeToggler input[type="checkbox"]:checked + .toggleLabel {
+  background-color: #ccc; /* Background for dark theme */
+}
+.themeToggler .toggleLabel .toggleCircle {
+  transform: translateX(0); /* Circle on the left */
+}
+.themeToggler input[type="checkbox"]:checked + .toggleLabel .toggleCircle {
+  transform: translateX(20px); /* Move circle to the right */
+}
+
+
+.sidebarToggleButton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it’s above the sidebar */
+}
+
+.sidebarToggleButton:hover {
+  background-color: #0056b3;
+}

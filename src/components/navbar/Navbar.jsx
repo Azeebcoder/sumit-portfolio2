@@ -3,11 +3,12 @@ import styles from "./Navbar.module.css";
 import Container from "../container/Container.jsx";
 import { IoMenu } from "react-icons/io5";
 import { AiOutlineFullscreenExit } from "react-icons/ai";
-import { useTheme } from "../../contaxt/ThemeContext";
+
+import Setting from "../setting/Setting.jsx";
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useTheme();
   const [clicked, updateClicked] = useState(false);
+  const [settingClicked,updateSettingClicked] = useState(false)
   const handleToggle = () => updateClicked(!clicked);
   const closeNavbar = (e,id) => {
     e.preventDefault();
@@ -17,6 +18,10 @@ const Navbar = () => {
     }
     updateClicked(false);
   };
+
+  const handleSetting = () => {
+    updateSettingClicked(!settingClicked);
+  }
 
   useEffect(() => {
     if (clicked) {
@@ -31,7 +36,9 @@ const Navbar = () => {
 
   return (
     <>
+      
       <div className={styles.navbar}>
+        <Setting settingClicked={settingClicked} updateSettingClicked={updateSettingClicked}/>
         <Container>
           <div className={styles.navbarElements}>
             <ul className={styles.leftNav}>Logo</ul>
@@ -70,19 +77,13 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
-              <li className={styles.toggler}>
-                <div className={styles.themeToggler}>
-                  <input
-                    type="checkbox"
-                    id="theme-toggle"
-                    onClick={() => {
-                      toggleTheme();
-                    }}
-                  />
-                  <label htmlFor="theme-toggle" className={styles.toggleLabel}>
-                    <span className={styles.toggleCircle}></span>
-                  </label>
-                </div>
+              <li>
+                <a href="#" onClick={(e)=>{
+                  handleSetting();
+                  closeNavbar(e)
+                }}>
+                  Setting
+                </a>
               </li>
             </ul>
             <div className={styles.menu} onClick={handleToggle}>

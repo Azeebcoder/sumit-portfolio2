@@ -96,6 +96,9 @@ h4{
 p{
   color: var(--description-text);
 }
+hr{
+  color: var(--description-text);
+}
 @media (max-width: 850px){
   h1{
     font-size: 30px;
