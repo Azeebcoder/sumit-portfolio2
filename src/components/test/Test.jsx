@@ -1,53 +1,94 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { collection, addDoc } from "firebase/firestore";
+import { firestore } from "../../firebase/Firebase";
+import styles from "./Test.module.css";
 
-const Test = () => {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [link, setLink] = useState("");
-  const [file, setFile] = useState(null);
+const FormComponent = () => {
+  const [formData, setFormData] = useState({
+    url: "",
+    skill: "",
+    category: "",
+  });
 
-  const handleUpload = async () => {
-    if (!file) {
-      alert("Please select an image file.");
-      return;
-    }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      // Create form data for the image upload
-      const formData = new FormData();
-      formData.append("image", file);
-
-      // Upload the image to ImgBB
-      const res = await axios.post(
-        "https://api.imgbb.com/1/upload?key=33e2e65a31c354c56956fb73fc5434ac", // Replace with your API key
-        formData
-      );
-
-      const imageUrl = res.data.data.url; // Get the image URL from ImgBB response
-
-      // Log project data (you can save it to Firestore or a JSON file)
-      const projectData = { name, description, link, imageUrl };
-      console.log("Project uploaded:", projectData);
-      console.log("URl:", projectData.imageUrl);
-
-      alert("Project uploaded successfully!");
+      // Add document to Firestore
+      await addDoc(collection(firestore, "Skills"), formData);
+      alert("Form submitted successfully!");
+      setFormData({ url: "", skill: "", category: "" }); // Reset form
     } catch (error) {
-      console.error("Error uploading image:", error);
-      alert("Failed to upload project.");
+      console.error("Error adding document: ", error);
+      alert("Error submitting the form. Please try again.");
     }
   };
 
   return (
-    <div>
-      <h1 >Upload Project</h1>
-      <input
-        type="file"
-        onChange={(e) => setFile(e.target.files[0])}
-      />
-      <button onClick={handleUpload}>Upload Project</button>
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <h2 className={styles.heading}>Submit Your Details</h2>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          {/* Image URL Field */}
+          <div className={styles.formGroup}>
+            <label htmlFor="url" className={styles.label}>
+              Image URL:
+            </label>
+            <input
+              type="url"
+              id="url"
+              name="url"
+              value={formData.url}
+              onChange={handleChange}
+              placeholder="Enter image URL"
+              className={styles.input}
+            />
+          </div>
+
+          {/* Skill Field */}
+          <div className={styles.formGroup}>
+            <label htmlFor="skill" className={styles.label}>
+              Skill:
+            </label>
+            <input
+              type="text"
+              id="skill"
+              name="skill"
+              value={formData.skill}
+              onChange={handleChange}
+              placeholder="Enter your skill"
+              className={styles.input}
+            />
+          </div>
+
+          {/* Category Field */}
+          <div className={styles.formGroup}>
+            <label htmlFor="category" className={styles.label}>
+              Category:
+            </label>
+            <input
+              type="text"
+              id="category"
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
+              placeholder="Enter category"
+              className={styles.input}
+            />
+          </div>
+
+          {/* Submit Button */}
+          <button type="submit" className={styles.submitButton}>
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
 
-export default Test;
+export default FormComponent;

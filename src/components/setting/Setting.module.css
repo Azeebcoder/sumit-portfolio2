@@ -1,31 +1,43 @@
-.setting{
+.setting {
   position: absolute;
   display: flex;
-    flex-direction: column;
-    top: 0;
-    width: 20rem;
-    right: 0;
-    height: 100vh;
-    transform: translateX(100%);
-    transition: .3s;
-    padding: 1rem;
-    background-color: var(--even-background);
-    z-index: 10;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  width: 20rem;
+  right: 0;
+  height: 100vh;
+  transform: translateX(120%);
+  transition: .4s;
+  padding: 1rem;
+  background-color: var(--even-background);
+  z-index: 2;
+  box-shadow: -19px 0px 45px 0px black;
 }
-.active{
+
+.active {
   transform: translateX(0);
 }
-.settingList{
+
+.loginUser{
+  text-align: center;
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.settingList {
   display: flex;
   flex-direction: column;
   gap: .5rem;
 }
-.closeIcon{
+
+.closeIcon {
   margin-bottom: 1rem;
   display: flex;
   justify-content: end;
 }
-.closeIcon button{
+
+.closeIcon button {
   background: none;
   border: none;
   color: var(--heading-text);
@@ -34,14 +46,15 @@
   display: flex;
 }
 
-.toggler{
+.toggler {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   gap: .2rem;
 }
-.themeIcons{
+
+.themeIcons {
   padding: 1rem 0;
   display: flex;
   justify-content: center;
@@ -65,7 +78,8 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #333; /* Default background for light theme */
+  background-color: #333;
+  /* Default background for light theme */
   border-radius: 50px;
   cursor: pointer;
   position: relative;
@@ -87,30 +101,116 @@
 }
 
 /* Checked State (Dark Theme) */
-.themeToggler input[type="checkbox"]:checked + .toggleLabel {
-  background-color: #ccc; /* Background for dark theme */
+.themeToggler input[type="checkbox"]:checked+.toggleLabel {
+  background-color: #ccc;
+  /* Background for dark theme */
 }
+
 .themeToggler .toggleLabel .toggleCircle {
-  transform: translateX(0); /* Circle on the left */
+  transform: translateX(0);
+  /* Circle on the left */
 }
-.themeToggler input[type="checkbox"]:checked + .toggleLabel .toggleCircle {
-  transform: translateX(20px); /* Move circle to the right */
+
+.themeToggler input[type="checkbox"]:checked+.toggleLabel .toggleCircle {
+  transform: translateX(20px);
+  /* Move circle to the right */
 }
 
 
-.sidebarToggleButton {
+.loginUser button {
   position: fixed;
   top: 1rem;
   left: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: var(--btn-color);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1001; /* Ensure it’s above the sidebar */
+  z-index: 3;
+  /* Ensure it’s above the sidebar */
+  transition: .3s;
 }
 
-.sidebarToggleButton:hover {
-  background-color: #0056b3;
+.loginUser button:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.05);
+}
+
+.container {
+  text-align: center;
+}
+
+.dialogOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0; /* Ensure it covers the entire screen */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Blackened background with opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dialogTitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitButton {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton:hover {
+  background-color: #d32f2f;
+}
+
+.redBtn{
+  background-color: rgb(212, 29, 29) !important;
 }

@@ -1,26 +1,37 @@
-import React from 'react'
-import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import About from './components/about/About.jsx'
-import Skills from './components/skills/Skills.jsx'
-import Education from './components/education/Education.jsx'
-import Projects from './components/projects/Projects.jsx'
-import Contact from './components/contact/Contact.jsx'
-import Footer from './components/footer/Footer.jsx'
+import React from "react";
+import "./App.css";
+import Home from "./Home";
+import Test from "./components/test/Test.jsx";
+import Addproject from "./components/addproject/Addproject.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Protected } from "./protected/Protected.jsx";
+
 const App = () => {
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <About/>
-    <Skills/>
-    <Education/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/addskill"
+            element={
+              <Protected>
+                <Test />
+              </Protected>
+            }
+          />
+          <Route
+            path="/addproject"
+            element={
+              <Protected>
+                <Addproject />
+              </Protected>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -5,4 +5,6 @@ export const Config = {
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   senderId: import.meta.env.VITE_FIREBASE_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  password : import.meta.env.VITE_ADMIN_PASS,
+  imgbbapi: import.meta.env.VITE_IMGBB_API_KEY,
 };

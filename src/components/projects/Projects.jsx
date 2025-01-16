@@ -2,39 +2,53 @@ import React, { useEffect, useState } from "react";
 import styles from "./Projects.module.css";
 import Container from "../container/Container.jsx";
 import { FaLaptopCode } from "react-icons/fa";
-import projects from '../../assets/myDetails/projects.json'
+import { firestore } from "../../firebase/Firebase.jsx";
+import { collection, getDocs } from "firebase/firestore";
 
 const Projects = () => {
 
-  const [selectedFilter, setSelectedFilter] = useState([]);
-  const [filteredItems, setFilteredItems] = useState(projects); // Assuming projects is defined elsewhere
+  const [projects, setProjects] = useState([]);
+    useEffect(() => {
+      const fetchData = async () => {
+        const querySnapshot = await getDocs(collection(firestore, "projects")); // e.g., "users"
+        const items = [];
+        querySnapshot.forEach((doc) => {
+          items.push({ id: doc.id, ...doc.data() });
+        });
+        setProjects(items);
+      };
+      fetchData();
+    }, []);
 
-  const filters = ['Web Development', 'App Development', 'Frontend', 'Backend'];
+  // const [selectedFilter, setSelectedFilter] = useState([]);
+  // const [filteredItems, setFilteredItems] = useState(projects); // Assuming projects is defined elsewhere
 
-  const handleFilterButtonClick = (selectedCategory) => {
-    if (selectedFilter.includes(selectedCategory)) {
-      const filters = selectedFilter.filter((el) => el !== selectedCategory);
-      setSelectedFilter(filters);
-    } else {
-      setSelectedFilter([...selectedFilter, selectedCategory]);
-    }
-  };
+  // const filters = ['Web Development', 'App Development', 'Frontend', 'Backend'];
 
-  const filterItems = () => {
-    if (selectedFilter.length > 0) {
-      // Filter projects that match any selected category
-      const tempItems = projects.filter((item) =>
-        selectedFilter.some((category) => item.catogery.includes(category))
-      );
-      setFilteredItems(tempItems);
-    } else {
-      setFilteredItems([...projects]);
-    }
-  };
+  // const handleFilterButtonClick = (selectedCategory) => {
+  //   if (selectedFilter.includes(selectedCategory)) {
+  //     const filters = selectedFilter.filter((el) => el !== selectedCategory);
+  //     setSelectedFilter(filters);
+  //   } else {
+  //     setSelectedFilter([...selectedFilter, selectedCategory]);
+  //   }
+  // };
 
-  useEffect(() => {
-    filterItems();
-  }, [selectedFilter]);
+  // const filterItems = () => {
+  //   if (selectedFilter.length > 0) {
+  //     // Filter projects that match any selected category
+  //     const tempItems = projects.filter((item) =>
+  //       selectedFilter.some((category) => item.category.includes(category))
+  //     );
+  //     setFilteredItems(tempItems);
+  //   } else {
+  //     setFilteredItems([...projects]);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   filterItems();
+  // }, [selectedFilter]);
 
   return (
     <>
@@ -42,17 +56,17 @@ const Projects = () => {
         <Container>
           <div className={styles.project}>
             <h1><FaLaptopCode />Projects Made</h1>
-            <div className={styles.catogeries}>
-              {filters.map((catogery,index) => (
+            {/* <div className={styles.catogeries}>
+              {filters.map((category,index) => (
                 <button
-                  onClick={()=>{handleFilterButtonClick(catogery)}}
-                  className={selectedFilter?.includes(catogery)? styles.activeCatogrie:""}
+                  onClick={()=>{handleFilterButtonClick(category)}}
+                  className={selectedFilter?.includes(category)? styles.activeCatogrie:""}
                   key={`fillter-${index}`}
-                >{catogery}</button>
+                >{category}</button>
               ))}
-            </div>
+            </div> */}
             <div className={styles.projects}>
-              {filteredItems.map((project,index)=>(
+              {projects.map((project,index)=>(
                 <div key={`Projects-${index}`} className={index%2==0?`${styles.first} ${styles.hero}`:`${styles.second} ${styles.hero}`}>
                 <img src={project.image_url} alt="Project image" className={styles.image}/>
                 <div className={styles.text}></div>
