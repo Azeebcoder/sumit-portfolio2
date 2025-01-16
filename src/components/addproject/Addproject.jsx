@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Config } from "../../config/Config";
-import styles from "./AddProject.module.css";
+import styles from "./Addproject.module.css";
 import { firestore } from "../../firebase/Firebase";
 import { addDoc, collection } from "firebase/firestore";
 
