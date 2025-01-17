@@ -154,3 +154,31 @@
     max-width: 90%;
   }
 }
+.viewAll {
+  text-align: center; /* Center align the button */
+  margin: 20px 0; /* Add spacing around the container */
+}
+
+.viewButton {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); /* Modern gradient */
+  color: #fff; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 12px 24px; /* Comfortable padding */
+  font-size: 18px; /* Larger font size for emphasis */
+  font-weight: 600; /* Semi-bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.3s ease; /* Smooth hover and click effects */
+}
+
+.viewButton:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.viewButton:active {
+  transform: translateY(1px); /* Slight press effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Return to original shadow */
+  background: linear-gradient(90deg, #5a0fba 0%, #2068e3 100%); /* Slightly darker gradient on click */
+}

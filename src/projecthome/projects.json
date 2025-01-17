@@ -1,0 +1,42 @@
+[
+  {
+    "name" : "Portfolio Website",
+    "description" : "Responsive Portfolio Website using HTML, CSS, and JS.",
+    "view_url" : "https://azeebcoder.github.io/Sumit-portfolio/",
+    "image_url" : "/images/portfolio.jpg",
+    "logo_url" : "/images/logo.jpg",
+    "category":"Web Development"
+  },
+  {
+    "name" : "Tic Tac Toe",
+    "description" : "Functional Tic Tac Toe using JavaScript.",
+    "view_url" : "https://azeebcoder.github.io/Tic-Tac-Toe/",
+    "image_url" : "/images/tic-tac-toe.png",
+    "logo_url" : "/images/logo.jpg",
+    "category":"Backend"
+  },
+  {
+    "name" : "Real-estate Web Ui",
+    "description" : "Responsive Real-estate web Ui Using HTML and CSS.",
+    "view_url" : "https://baghpatrealestate.com/",
+    "image_url" : "/images/real-estate.png",
+    "logo_url" : "/images/logo.jpg",
+    "category":"Frontend"
+  },
+  {
+    "name" : "Simple Quiz App",
+    "description" : "Working Quiz App using JavaScript, Api.",
+    "view_url" : "https://sumit-quiz-simple.netlify.app/",
+    "image_url" : "/images/quiz-app.png",
+    "logo_url" : "/images/logo.jpg",
+    "category":"Backend"
+  },
+  {
+    "name" : "Naughty Calculator",
+    "description" : "Working Calculator With Naughty Addons using js.",
+    "view_url" : "https://sumit-simple-calculator.netlify.app/",
+    "image_url" : "/images/naughty-calculator.png",
+    "logo_url" : "/images/logo.jpg",
+    "category":"Web Development"
+  }
+]

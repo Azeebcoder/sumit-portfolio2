@@ -5,6 +5,7 @@ import Test from "./components/test/Test.jsx";
 import Addproject from "./components/addproject/Addproject.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Protected } from "./protected/Protected.jsx";
+import Projects from "./components/projects/Projects.jsx";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
               </Protected>
             }
           />
+          <Route path="/projects" element={<Projects/>} />
         </Routes>
       </BrowserRouter>
     </>
