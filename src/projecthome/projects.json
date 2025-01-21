@@ -1,5 +1,13 @@
 [
   {
+    "name" : "Movie Website",
+    "description" : "Responsive Web app Using react js and api",
+    "view_url" : "https://sumovie.netlify.app/",
+    "image_url" : "/images/movie-recommendation.png",
+    "logo_url" : "/images/logo.jpg",
+    "category":"Web Development"
+  },
+  {
     "name" : "Portfolio Website",
     "description" : "Responsive Portfolio Website using HTML, CSS, and JS.",
     "view_url" : "https://azeebcoder.github.io/Sumit-portfolio/",
