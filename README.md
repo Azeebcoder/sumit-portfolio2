@@ -5,20 +5,20 @@ Welcome to my personal portfolio website repository. This website is designed to
 
 ## 🌐 Live Demo  
 
-🔗 — [Visit the Live Website](https://sumovie.netlify.app)  
+🔗 — [Visit the Live Website](https://sumit-portfolio2.netlify.app)  
 
 ---
 
-## 📋‹ Table of Contents  
+## 📋 Table of Contents  
 
 - [✨ Features](#-features)  
 - [🛠️ Technologies Used](#-technologies-used)  
 - [🚀 Getting Started](#-getting-started)  
-- [📁‚ Project Structure](#-project-structure)  
+- [📁 Project Structure](#-project-structure)  
 - [📜 Available Scripts](#-available-scripts)  
 - [🌎 Deployment](#-deployment)  
 - [🤝 Contributing](#-contributing)  
-- [📃„ License](#-license)  
+- [📃 License](#-license)  
 - [✉️ Contact](#-contact)  
 
 ---
@@ -68,7 +68,7 @@ Follow these steps to run the project locally:
 
 ---
 
-## 📁‚ Project Structure  
+## 📁 Project Structure  
 
 ```plaintext
 sumit-portfolio2/  
@@ -135,7 +135,7 @@ Contributions are welcome!
 
 ---
 
-## 📃 „ License  
+## 📃  License  
 
 This project is licensed under the MIT License.  
 
