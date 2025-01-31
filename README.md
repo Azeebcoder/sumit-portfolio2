@@ -1,37 +1,38 @@
-# 💼 Sumit Bhardwaj's Portfolio Website  
+
+# ðŸ’¼ Sumit Bhardwaj's Portfolio Website  
 
 Welcome to my personal portfolio website repository. This website is designed to showcase my skills, projects, and experiences as a Full-Stack Developer.  
 
-## 🌐 Live Demo  
+## ðŸŒ Live Demo  
 
-🔗 [Visit the Live Website](https://sumovie.netlify.app)  
-
----
-
-## 📋 Table of Contents  
-
-- [✨ Features](#-features)  
-- [🛠️ Technologies Used](#️-technologies-used)  
-- [🚀 Getting Started](#-getting-started)  
-- [📂 Project Structure](#-project-structure)  
-- [📜 Available Scripts](#-available-scripts)  
-- [🌍 Deployment](#-deployment)  
-- [🤝 Contributing](#-contributing)  
-- [📄 License](#-license)  
-- [📧 Contact](#-contact)  
+ðŸ”— [Visit the Live Website](https://sumovie.netlify.app)  
 
 ---
 
-## ✨ Features  
+## ðŸ“‹ Table of Contents  
 
-- 📱 **Responsive Design:** Optimized for various screen sizes  
-- 📁 **Project Showcase:** Highlighting my key development projects  
-- ⚡ **Fast Performance:** Lightweight and efficient design  
-- 💼 **Contact Section:** Direct ways to get in touch  
+- [âœ¨ Features](#-features)  
+- [ðŸ› ï¸ Technologies Used](#ï¸-technologies-used)  
+- [ðŸš€ Getting Started](#-getting-started)  
+- [ðŸ“‚ Project Structure](#-project-structure)  
+- [ðŸ“œ Available Scripts](#-available-scripts)  
+- [ðŸŒ Deployment](#-deployment)  
+- [ðŸ¤ Contributing](#-contributing)  
+- [ðŸ“„ License](#-license)  
+- [ðŸ“§ Contact](#-contact)  
 
 ---
 
-## 🛠️ Technologies Used  
+## âœ¨ Features  
+
+- ðŸ“± **Responsive Design:** Optimized for various screen sizes  
+- ðŸ“ **Project Showcase:** Highlighting my key development projects  
+- âš¡ **Fast Performance:** Lightweight and efficient design  
+- ðŸ’¼ **Contact Section:** Direct ways to get in touch  
+
+---
+
+## ðŸ› ï¸ Technologies Used  
 
 - **Frontend:** React, Vite  
 - **Styling:** CSS  
@@ -40,7 +41,7 @@ Welcome to my personal portfolio website repository. This website is designed to
 
 ---
 
-## 🚀 Getting Started  
+## ðŸš€ Getting Started  
 
 Follow these steps to run the project locally:  
 
@@ -49,109 +50,100 @@ Follow these steps to run the project locally:
    ```bash
    git clone https://github.com/Azeebcoder/sumit-portfolio2.git
    cd sumit-portfolio2
+   ```  
 
-2. Install dependencies:
+2. **Install dependencies:**  
 
-npm install
+   ```bash
+   npm install
+   ```  
 
+3. **Start the development server:**  
 
-3. Start the development server:
+   ```bash
+   npm run dev
+   ```  
 
-npm run dev
-
-The website will be available at http://localhost:5173.
-
-
-
+   The website will be available at `http://localhost:5173`.  
 
 ---
 
-📂 Project Structure
+## ðŸ“‚ Project Structure  
 
+```plaintext
 sumit-portfolio2/  
-├── public/             # Static assets  
-├── src/                # Source code  
-│   ├── assets/         # Images and other assets  
-│   ├── components/     # Reusable components  
-│   ├── pages/          # Page components  
-│   ├── App.jsx         # Main application component  
-│   ├── main.jsx        # Entry point  
-│   └── index.css       # Global styles  
-├── .gitignore          # Git ignore file  
-├── index.html          # HTML template  
-├── package.json        # Project metadata and scripts  
-├── README.md           # Project documentation  
-└── vite.config.js      # Vite configuration
-
-
----
-
-📜 Available Scripts
-
-Start Development Server:
-
-npm run dev
-
-Build for Production:
-
-npm run build
-
-Preview Production Build:
-
-npm run preview
-
-
+â”œâ”€â”€ public/             # Static assets  
+â”œâ”€â”€ src/                # Source code  
+â”‚   â”œâ”€â”€ assets/         # Images and other assets  
+â”‚   â”œâ”€â”€ components/     # Reusable components  
+â”‚   â”œâ”€â”€ pages/          # Page components  
+â”‚   â”œâ”€â”€ App.jsx         # Main application component  
+â”‚   â”œâ”€â”€ main.jsx        # Entry point  
+â”‚   â””â”€â”€ index.css       # Global styles  
+â”œâ”€â”€ .gitignore          # Git ignore file  
+â”œâ”€â”€ index.html          # HTML template  
+â”œâ”€â”€ package.json        # Project metadata and scripts  
+â”œâ”€â”€ README.md           # Project documentation  
+â””â”€â”€ vite.config.js      # Vite configuration  
+```  
 
 ---
 
-🌍 Deployment
+## ðŸ“œ Available Scripts  
 
-1. Build the project:
+- **Start Development Server:**  
 
-npm run build
+   ```bash
+   npm run dev
+   ```  
 
+- **Build for Production:**  
 
-2. Deploy the dist/ directory to Netlify or any preferred hosting service.
+   ```bash
+   npm run build
+   ```  
 
+- **Preview Production Build:**  
 
-
-
----
-
-🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository.
-
-
-2. Create a new branch: git checkout -b feature/YourFeature.
-
-
-3. Commit your changes: git commit -m 'Add YourFeature'.
-
-
-4. Push to the branch: git push origin feature/YourFeature.
-
-
-5. Open a pull request.
-
-
-
+   ```bash
+   npm run preview
+   ```  
 
 ---
 
-📄 License
+## ðŸŒ Deployment  
 
-This project is licensed under the MIT License.
+1. **Build the project:**  
 
+   ```bash
+   npm run build
+   ```  
+
+2. **Deploy the `dist/` directory to Netlify or any preferred hosting service.**  
 
 ---
 
-📧 Contact
+## ðŸ¤ Contributing  
 
-Sumit Bhardwaj
+Contributions are welcome!  
 
-📧 Email: sumitbhardwajnew@gmail.com
+1. Fork the repository.  
+2. Create a new branch: `git checkout -b feature/YourFeature`.  
+3. Commit your changes: `git commit -m 'Add YourFeature'`.  
+4. Push to the branch: `git push origin feature/YourFeature`.  
+5. Open a pull request.  
 
-💼 LinkedIn: Sumit Bhardwaj
+---
+
+## ðŸ“„ License  
+
+This project is licensed under the MIT License.  
+
+---
+
+## ðŸ“§ Contact  
+
+**Sumit Bhardwaj**  
+
+- ðŸ“§ **Email:** [sumitbhardwajnew@gmail.com](mailto:sumitbhardwajnew@gmail.com)  
+- ðŸ’¼ **LinkedIn:** [Sumit Bhardwaj](https://www.linkedin.com/in/sumit-bhardwaj-new)  
