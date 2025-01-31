@@ -1,38 +1,38 @@
 
-# ðŸ’¼ Sumit Bhardwaj's Portfolio Website  
+# 💼 Sumit Bhardwaj's Portfolio Website  
 
 Welcome to my personal portfolio website repository. This website is designed to showcase my skills, projects, and experiences as a Full-Stack Developer.  
 
-## ðŸŒ Live Demo  
+## 🌐 Live Demo  
 
-ðŸ”— [Visit the Live Website](https://sumovie.netlify.app)  
-
----
-
-## ðŸ“‹ Table of Contents  
-
-- [âœ¨ Features](#-features)  
-- [ðŸ› ï¸ Technologies Used](#ï¸-technologies-used)  
-- [ðŸš€ Getting Started](#-getting-started)  
-- [ðŸ“‚ Project Structure](#-project-structure)  
-- [ðŸ“œ Available Scripts](#-available-scripts)  
-- [ðŸŒ Deployment](#-deployment)  
-- [ðŸ¤ Contributing](#-contributing)  
-- [ðŸ“„ License](#-license)  
-- [ðŸ“§ Contact](#-contact)  
+🔗 — [Visit the Live Website](https://sumovie.netlify.app)  
 
 ---
 
-## âœ¨ Features  
+## 📋‹ Table of Contents  
 
-- ðŸ“± **Responsive Design:** Optimized for various screen sizes  
-- ðŸ“ **Project Showcase:** Highlighting my key development projects  
-- âš¡ **Fast Performance:** Lightweight and efficient design  
-- ðŸ’¼ **Contact Section:** Direct ways to get in touch  
+- [✨ Features](#-features)  
+- [🛠️ Technologies Used](#-technologies-used)  
+- [🚀 Getting Started](#-getting-started)  
+- [📁‚ Project Structure](#-project-structure)  
+- [📜 Available Scripts](#-available-scripts)  
+- [🌎 Deployment](#-deployment)  
+- [🤝 Contributing](#-contributing)  
+- [📃„ License](#-license)  
+- [✉️ Contact](#-contact)  
 
 ---
 
-## ðŸ› ï¸ Technologies Used  
+## ✨ Features  
+
+- 📱 **Responsive Design:** Optimized for various screen sizes  
+- 📁 **Project Showcase:** Highlighting my key development projects  
+  - ⚡ **Fast Performance:** Lightweight and efficient design  
+-  💼 **Contact Section:** Direct ways to get in touch  
+
+---
+
+## 🛠️ Technologies Used  
 
 - **Frontend:** React, Vite  
 - **Styling:** CSS  
@@ -41,7 +41,7 @@ Welcome to my personal portfolio website repository. This website is designed to
 
 ---
 
-## ðŸš€ Getting Started  
+## 🚀 Getting Started  
 
 Follow these steps to run the project locally:  
 
@@ -68,28 +68,28 @@ Follow these steps to run the project locally:
 
 ---
 
-## ðŸ“‚ Project Structure  
+## 📁‚ Project Structure  
 
 ```plaintext
 sumit-portfolio2/  
-â”œâ”€â”€ public/             # Static assets  
-â”œâ”€â”€ src/                # Source code  
-â”‚   â”œâ”€â”€ assets/         # Images and other assets  
-â”‚   â”œâ”€â”€ components/     # Reusable components  
-â”‚   â”œâ”€â”€ pages/          # Page components  
-â”‚   â”œâ”€â”€ App.jsx         # Main application component  
-â”‚   â”œâ”€â”€ main.jsx        # Entry point  
-â”‚   â””â”€â”€ index.css       # Global styles  
-â”œâ”€â”€ .gitignore          # Git ignore file  
-â”œâ”€â”€ index.html          # HTML template  
-â”œâ”€â”€ package.json        # Project metadata and scripts  
-â”œâ”€â”€ README.md           # Project documentation  
-â””â”€â”€ vite.config.js      # Vite configuration  
+├── public/             # Static assets  
+├── src/                # Source code  
+│   ├── assets/         # Images and other assets  
+│   ├── components/     # Reusable components  
+│   ├── pages/          # Page components  
+│   ├── App.jsx         # Main application component  
+│   ├── main.jsx        # Entry point  
+│   └── index.css       # Global styles  
+├── .gitignore          # Git ignore file  
+├── index.html          # HTML template  
+├── package.json        # Project metadata and scripts  
+├── README.md           # Project documentation  
+└── vite.config.js      # Vite configuration
 ```  
 
 ---
 
-## ðŸ“œ Available Scripts  
+## 📃 Available Scripts  
 
 - **Start Development Server:**  
 
@@ -111,7 +111,7 @@ sumit-portfolio2/
 
 ---
 
-## ðŸŒ Deployment  
+## 🌎 Deployment  
 
 1. **Build the project:**  
 
@@ -123,7 +123,7 @@ sumit-portfolio2/
 
 ---
 
-## ðŸ¤ Contributing  
+## 🤝 Contributing  
 
 Contributions are welcome!  
 
@@ -135,15 +135,15 @@ Contributions are welcome!
 
 ---
 
-## ðŸ“„ License  
+## 📃 „ License  
 
 This project is licensed under the MIT License.  
 
 ---
 
-## ðŸ“§ Contact  
+## ✉️ Contact  
 
 **Sumit Bhardwaj**  
 
-- ðŸ“§ **Email:** [sumitbhardwajnew@gmail.com](mailto:sumitbhardwajnew@gmail.com)  
-- ðŸ’¼ **LinkedIn:** [Sumit Bhardwaj](https://www.linkedin.com/in/sumit-bhardwaj-new)  
+- 📧 **Email:** [sumitbhardwajnew@gmail.com](mailto:sumitbhardwajnew@gmail.com)  
+- 💼 **LinkedIn:** [Sumit Bhardwaj](https://www.linkedin.com/in/sumit-bhardwaj-new)  
